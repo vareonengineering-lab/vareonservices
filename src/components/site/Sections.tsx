@@ -166,7 +166,7 @@ export function Testimonials() {
     const t = setInterval(() => setI((x) => (x + 1) % testimonials.length), 6000);
     return () => clearInterval(t);
   }, []);
-  const t = testimonials[i];
+  const t = testimonials[i] ?? testimonials[0]!;
   const go = (d: number) => setI((x) => (x + d + testimonials.length) % testimonials.length);
   return (
     <section className="py-28">
