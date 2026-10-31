@@ -1,0 +1,1 @@
+export function exportStatic(outputDirectory?: string): Promise<void>;
