@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Build architecture
+
+- Keep the TanStack Start React bootstrap and prerender explicitly listed public pages; the post-build static export copies client output to the dist root while retaining Lovable deployment artifacts, so static hosting and Lovable publishing remain compatible.
